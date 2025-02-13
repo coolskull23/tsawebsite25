@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Approach</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50d60b25e9.js" crossorigin="anonymous"></script>
+</head>
+<body class="w-full h-full">
+
+    <!-- Header -->
+    <header class="w-full flex flex-row justify-between border-b border-solid border-slate-200 pb-2 sticky top-0 z-40 bg-white">
+        <li class="flex items-center">
+            <ul class="w-14 ml-3 lg:ml-20 lg:w-32"><a href="index.html"><img src="images/logo-transparent.png"></a></ul>
+        </li>
+        <li class="flex mr-3 lg:mr-20 items-center text-lg">
+            <ul class="mr-6 hidden lg:block"><a href="index.html" class="hover-underline-animation">HOME</a></ul>
+            <ul class="mr-6 hidden lg:block"><a href="menu.html" class="hover-underline-animation">MENU</a></ul>
+            <ul class="mr-6 hidden lg:block"><a href="aboutUs.html" class="hover-underline-animation">ABOUT US</a></ul>
+            <ul class="mr-6 hidden lg:block"><a href="ourApproach.html" class="hover-underline-animation">OUR APPROACH</a></ul>
+            <ul class="mr-6 hidden lg:block"><a href="foodBlog.html" class="hover-underline-animation">FOOD BLOG</a></ul>
+            <ul class="mr-3 bg-green-700 text-white px-2 py-1 rounded-sm transition-all duration-300 ease-in-out hover:bg-green-600 hidden lg:block">
+                <a href="reserve.html">RESERVE</a>
+            </ul>
+            <ul class="mr-3 bg-green-700 text-white px-2 py-1 rounded-sm transition-all duration-300 ease-in-out hover:bg-green-600 hidden lg:block">
+                <a href="contactUs.html">CONTACT US</a>
+            </ul>
+            <ul>       
+                <svg class="lg:hidden w-8 h-8 cursor-pointer fill-black" id="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </ul>
+        </li>
+    </header>
+
+    <!-- Mobile Header -->
+    <div id="mobileMenu" class="hidden fixed inset-0 z-30 bg-white transition-transform duration-300 ease-in-out">
+        <ul class="flex flex-col items-center justify-center h-full text-lg">
+            <li class="py-4 mt-5"><a href="index.html" class="hover-underline-animation">HOME</a></li>
+            <li class="py-4"><a href="menu.html" class="hover-underline-animation">MENU</a></li>
+            <li class="py-4"><a href="aboutUs.html" class="hover-underline-animation">ABOUT US</a></li>
+            <li class="py-4"><a href="ourApproach.html" class="hover-underline-animation">OUR APPROACH</a></li>
+            <li class="py-4"><a href="foodBlog.html" class="hover-underline-animation">FOOD BLOG</a></li>
+            <li class="py-4"><a href="reserve.html" class="hover-underline-animation">RESERVE</a></li>
+            <li class="py-4"><a href="contactUs.html" class="hover-underline-animation">CONTACT US</a></li>
+            <li class="py-4 cursor-pointer text-red-500" id="closeMenu">CLOSE</li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="w-full h-full py-5 lg:py-10 min-h-[75vh] lg:min-h-[80vh] relative flex items-center justify-center bg-cover bg-center" style="background-image: url('images/photo9.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center text-center text-white px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black">Our Approach</h1>
+            <p class="mt-5 text-lg md:text-xl lg:text-2xl">Sustainability in Every Bite</p>
+        </div>
+    </section>
+
+    <!-- Farm-to-Table Commitment -->
+    <section class="w-full py-16 px-6 lg:px-20 flex flex-col justify-center items-center text-center bg-gray-100">
+        <h2 class="text-4xl lg:text-5xl font-black text-green-700">Farm-to-Table Commitment</h2>
+        <p class="mt-6 text-lg lg:text-2xl text-gray-700">
+            We support local organic farmers and minimize our carbon footprint by sourcing seasonal produce.
+        </p>
+    </section>
+
+    <!-- Zero Waste Initiatives -->
+    <section class="w-full py-16 px-6 lg:px-20 flex flex-col justify-center items-center text-center">
+        <h2 class="text-4xl lg:text-5xl font-black text-green-700">Zero Waste Initiatives</h2>
+        <p class="mt-6 text-lg lg:text-2xl text-gray-700">
+            Our kitchen practices composting, and we use biodegradable packaging and recyclable materials.
+        </p>
+    </section>
+
+    <!-- Eco-Friendly Packaging -->
+    <section class="w-full py-16 px-6 lg:px-20 flex flex-col justify-center items-center text-center bg-gray-100">
+        <h2 class="text-4xl lg:text-5xl font-black text-green-700">Eco-Friendly Packaging</h2>
+        <p class="mt-6 text-lg lg:text-2xl text-gray-700">
+            All takeout containers are made from compostable materials.
+        </p>
+    </section>
+
+    <!-- Giving Back -->
+    <section class="w-full py-16 px-6 lg:px-20 flex flex-col justify-center items-center text-center">
+        <h2 class="text-4xl lg:text-5xl font-black text-green-700">Giving Back</h2>
+        <p class="mt-6 text-lg lg:text-2xl text-gray-700">
+            A portion of our proceeds supports environmental conservation efforts.
+        </p>
+    </section>
+
+    <!-- Footer  -->
+    <div class="flex w-full h-full flex-col justify-between px-3 lg:px-20 py-5 lg:py-10 bg-green-700 text-white">
+        <nav class="flex flex-row justify-between">
+            <!-- Key Links -->
+            <div class="flex flex-row justify-center">
+                <ul>
+                    <li class="mb-3 font-bold text-lg">Key Links</li>
+                    <li><a href="index.html" class="text-sm lg:text-base hover-underline-animation">Home</a></li>
+                    <li><a href="menu.html" class="text-sm lg:text-base hover-underline-animation">Menu</a></li>
+                    <li><a href="aboutUs.html" class="text-sm lg:text-base hover-underline-animation">About Us</a></li>
+                    <li><a href="reserve.html" class="text-sm lg:text-base hover-underline-animation">Reserve</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="flex flex-col justify-center">
+                <a href="referencePage.html"><div class="text-sm lg:text-lg flex justify-center font-bold hover-underline-animation">Reference Page</div></a>
+            </div>
+            
+            <!-- Contact Us -->
+            <div class="flex flex-col justify-start items-center">
+                <ul>
+                    <li class="mb-3 flex justify-center font-bold text-base lg:text-lg">Contact Us</li>
+                    <li class="text-center text-sm lg:text-base"><a href="tel:9155035284" class="hover-underline-animation">123-456-7890</a></li>
+                    <li class="text-center text-sm lg:text-base"><a href="mailto:Chrisrs2676@gmail.com" class="hover-underline-animation">support@<br>thepigsaver.com</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+
+  // Toggle mobile menu
+  hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+  });
+
+  // Close mobile menu
+  closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+  });
+</script>
+</html>
